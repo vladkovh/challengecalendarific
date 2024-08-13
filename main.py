@@ -5,9 +5,11 @@ from writer import HolidaysWriter
 
 
 def main():
+    # input data
     country_list = ["us", "ua"]
     start_date = datetime.date(1992, 7, 7)
     end_date = datetime.date(1992, 9, 18)
+
     date_shift = datetime.timedelta(days=1)
     requester = CalendarApiRequester()
     for country in country_list:
